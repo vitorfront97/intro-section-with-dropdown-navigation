@@ -11,7 +11,7 @@ export default function Navbar() {
     document.documentElement.style.overflow = openMenu ? "hidden" : "auto";
   }, [openMenu]);
   return (
-    <div className="py-8 px-6 flex justify-between items-center">
+    <div className="py-8 px-6 flex items-center gap-16 md:px-10">
       <Image
         className="h-auto"
         src="/images/logo.svg"
@@ -35,4 +35,4 @@ export default function Navbar() {
       <Menu openMenu={openMenu} />
     </div>
   );
-}
+};
