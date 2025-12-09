@@ -7,7 +7,7 @@ interface menuProps {
 
 export default function Menu({openMenu}: menuProps) {
   return (
-    <div className={`w-2/3 h-full py-20 justify-between absolute top-0 right-0 bg-this-gray-50 z-50 transition-all duration-200 ${openMenu ? "visible opacity-100" : "invisible opacity-0"} md:py-2 md:w-full md:h-auto md:flex md:items-center md:static md:visible md:opacity-100 md:bg-transparent`}>
+    <div className={`w-2/3 h-full py-20 pl-8 justify-between absolute top-0 right-0 bg-this-gray-50 z-50 transition-all duration-200 ${openMenu ? "visible opacity-100" : "invisible opacity-0"} md:py-2 md:w-full md:h-auto md:flex md:items-center md:static md:visible md:opacity-100 md:bg-transparent`}>
       <ul className="flex flex-col gap-6 text-this-gray-500 text-[16px] font-medium md:h-auto md:flex-row md:items-center">
         <li className="relative">
           <Dropdown
